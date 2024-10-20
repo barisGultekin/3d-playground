@@ -1,21 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .App {
     width: 100vw;
     height: 100vh;
-} 
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
 
-.toggler {
-    display: flex;
-    gap: 1em;
-    padding: 1em;
+h2 {
+    font-size: 18px;
 }
 
 .configurator {
     position: fixed;
     right: 24px;
     width: 320px;
-    bottom: 25vh;
+    bottom: 24vh;
 
-    color: #fff;
+    color: white;
 
-    z-index: 20;
+    padding: 16px;
+}
+
+.configurator-items {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    flex-wrap: wrap;
+}
+
+.configurator-select-item {
+    font-size: 14px;
+    color: #acacac;
+    cursor: pointer;
+}
+
+
+.select-active {
+    color: white;
+}
+
+.configurator-select-item:hover {
+    opacity: 0.8;
+}
+
+.configurator-color-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.color-item-box {
+    width: 32px;
+    height: 32px;
+    
+    border-radius: 4px;
+}
+
+.color-item-label {
+    font-size: 12px;
 }
